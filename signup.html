@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="signup">
+            <div class="background">
+                <div class="cblock">
+                    <form class="login-form">
+                        <h1>REGISTER</h1>
+                        <div class="flex-input">
+                            <label for="FNAME">FIRST NAME: </label>
+                            <input type="text" id="FNAME" name="FNAME" pattern="[A-Za-z]">
+                        </div>
+                        <div class="flex-input">
+                            <label for="LNAME">LAST NAME: </label>
+                            <input type="text" id="LNAME" name="LNAME" pattern="[A-Za-z]">
+                        </div>
+                        <div class="flex-input">
+                            <label for="USERNAME">USERNAME: </label>
+                            <input type="text" id="USERNAME" name="USERNAME" required>
+                        </div>
+                        <div class="flex-input">
+                            <label for="PASSWORD">PASSWORD: </label>
+                            <input type="password" id="PASSWORD" name="PASSWORD" required>
+                        </div>
+                        <div class="flex-input">
+                            <label for="SEX">SEX: </label>
+                            <select id="SEX" name="SEX">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="helicopter">Helicopter</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea id="CONDITIONS" name="CONDITIONS" rows="10" cols="53">ANY SPECIAL CONDITIONS: </textarea><br><br>
+                            <input type="submit" value="SUBMIT"><br>
+                        </div>
+                    </form>
+                    <div>
+                        <ul>
+                            <li><a href="login.html">ALREADY A MEMBER?</a></li>
+                            <li><a href="index.html">GO HOME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

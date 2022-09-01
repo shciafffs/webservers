@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background {
+    background: linear-gradient(rgba(0,0,0,0.45), #DC143C), url(imgs/hellcat1.jpg);
+    background-size: cover;
+    background-position: cover;
+    height: 100vh;
+}
+.cblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    
+}
+.cblock h1{
+    color: azure;
+}
+.cblock label{
+    color: azure;
+}
+.login-form {
+    background-color: rgba(34, 28, 28, 0.45);
+    padding: 15px;
+    width: 400px;
+}
+.flex-input{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.login-form input[type="text"], [type="password"]{
+    padding: 10px;
+    font-size: 18px;
+}
+.login-form label{
+    flex-basis: 140px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.login-form input[type="submit"]{
+    width: 400px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(76, 179, 7);
+    color: azure;
+    border: 2px;
+    border-color: rgb(76, 179, 7);
+    border-radius: 10px;
+}
+.login-form input[type="submit"]:hover{
+    background-color: rgb(58, 131, 10);
+}
+.login-form select{
+    width: 215px;
+}
+.login-form h1{
+    margin-bottom: 20px;
+    margin-left: 110px;
+    font-size: 35px;
+}
