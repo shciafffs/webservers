@@ -18,7 +18,7 @@
 
             $sql="INSERT INTO users (FNAME, LNAME, SEX, USERNAME, PASSWORD, CONDITIONS) values('$fname', '$lname', $sex, '$username', '$password', '$conditions');";
             $result=mysqli_query($conn, $sql);
-            if ($result)
+            if ($result) {
                 echo "New record created successfully";
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
