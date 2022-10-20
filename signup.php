@@ -29,8 +29,8 @@
                         <div class="flex-input">
                             <label for="SEX">SEX: </label>
                             <select id="SEX" name="SEX">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
                             </select>
                         </div>
                         <div>

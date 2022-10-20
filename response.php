@@ -12,7 +12,7 @@
             $lname=htmlspecialchars($_POST['LNAME']);
             $username=htmlspecialchars($_POST['USERNAME']);
             $password=htmlspecialchars($_POST['PASSWORD']);
-            $sex=htmlspecialchars($_POST['SEX']);
+            $sex=(int)($_POST['SEX']);
             $conditions=htmlspecialchars($_POST['CONDITIONS']);
 
 
@@ -32,7 +32,7 @@
         <p>Your Last Name is: <?= htmlspecialchars($_POST['LNAME']) ?></p><br>
         <p>Your UserName is: <?= htmlspecialchars($_POST['USERNAME']) ?></p><br>
         <p>Your Password is: <?= htmlspecialchars($_POST['PASSWORD']) ?></p><br>
-        <p>Your Gender is: <?= htmlspecialchars($_POST['SEX']) ?></p><br>
+        <p>Your Gender is: <?= $sex ?></p><br>
         <p>Your Conditions are: <?= htmlspecialchars($_POST['CONDITIONS']) ?></p><br>
     </body>
 </html>
