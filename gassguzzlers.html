@@ -3,6 +3,28 @@
     <head>
         <!--Page title-->
         <title>GAS-GUZZLERS</title>
+        <script>
+            function currencyconverter(Cad)
+            {
+            // Programmatically get today's date
+            // Make an XMLHttp call to https://www.bankofcanada.ca/valet/observations/FXUSDCAD?start_date=2019-05-09&end_date=2020-05-12
+            
+            //Parse returned JSON
+            // const obj = JSON.parse(txt);
+            // document.getElementById("demo").innerHTML = obj.observations[0].FXUSDCAD.v;
+            
+            return 0.75 * Cad;
+            }
+            function statshidder()
+            {
+                var x = document.getElementById("stats");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                     x.style.display = "none";
+                }
+            }
+        </script>
     </head>
     <body>
         <!--Page title-->
@@ -13,9 +35,14 @@
             <h2>DODGE DEMON</h2>
             <img src="imgs/dodgedemon.png">
             <h3>Stats:</h3>
-            <p>Top Speed: 326.6km/h</p>
-            <p>Engine: Supercharged 6.2LT V8, 808HP @ 6,300rpm</p>
-            <p>Price: Starts at 111,265CAN$</p>
+            <div id="stats">
+                <p>Top Speed: 326.6km/h</p>
+                <p>Engine: Supercharged 6.2LT V8, 808HP @ 6,300rpm</p>
+                <p>Price: Starts at</p><p id="price"> 111,265CAD$</p><br>
+            </div>
+            <button id="stats" type="submit" onclick="document.getElementById('stats').innerHTML=statshidder();">Stats</button>
+            <!-- Link to see USD currency -->
+            <button id="curchange" type="submit" onclick="document.getElementById('price').innerHTML=currencyconverter(111265);this.innerHTML='CAD$';">USD$</button><br>
             <!--Link to buy vehicle-->
             <a href="https://www.dodge.ca/en/build-and-price/dodge/challenger/2022/23732/CAD20DOC191E3#step=colours"> BUY NOW!</a>
             <br>
