@@ -23,7 +23,18 @@
 
         <div>
             <!--Link to go back home-->
-            <a href="index.html">TAKE ME HOME!</a>
+            <a href="index.html">TAKE ME HOME!</a><br><br>
+            <form method="POST" action="led.php">
+                <label for="LEDON">ON</label>
+                <input type="radio" value="ON" name="LED" id="LEDON"><br>
+                <label for="LEDOFF">OFF</label>
+                <input type="radio" value="OFF" name="LED" id="LEDOFF"><br>
+                <label for="LEDTOG">TOGGLE</label>
+                <input type="radio" value="TOGGLE" name="LED" id="LEDTOG"><br>
+                <label for="LEDBLINK">BLINK</label>
+                <input type="radio" value="BLINK" name="LED" id="LEDBLINK"><br>
+                <button id="LED" type="submit">LED</button>
+            </form>
         </div>
     </body>
 </html>
