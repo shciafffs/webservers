@@ -17,6 +17,6 @@
     ?>
     </head>
     <body>
-        <p>Your LED is: <?= echo $state; ?></p><br>
+        <p>Your LED is: <?= $state; ?></p><br>
     </body>
 </html>
