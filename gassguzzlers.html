@@ -27,12 +27,11 @@
             function imgsrc()
             {
                 var x = document.getElementById("imgch");
-                if (x.src === "imgs/dodgedemon.png") {
+                if (x.src.includes("imgs/dodgedemon.png")) {
                     x.src="imgs/audietron.jpg";
                 }
                 else {
                     x.src="imgs/dodgedemon.png";
-                    alert(x.src);
                 }
             }
         </script>

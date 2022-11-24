@@ -3,6 +3,16 @@
     <head>
         <title>Sign Up</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            function fieldrequirement(x) {
+                var required = document.getElementById("requirement");
+                if (x.value == "") {
+                    required.style.display = "block";
+                } else {
+                     required.style.display = "none";
+                }
+            }
+        </script>
     </head>
     <body>
         <section class="signup">
@@ -20,7 +30,8 @@
                         </div>
                         <div class="flex-input">
                             <label for="USERNAME">USERNAME: </label>
-                            <input type="text" id="USERNAME" name="USERNAME" required>
+                            <input type="text" id="USERNAME" name="USERNAME" required onblur="fieldrequirement(this);">
+                            <p id="requirement" hidden>Required*</p><br>
                         </div>
                         <div class="flex-input">
                             <label for="PASSWORD">PASSWORD: </label>
