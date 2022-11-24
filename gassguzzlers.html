@@ -34,6 +34,14 @@
                     x.src="imgs/dodgedemon.png";
                 }
             }
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                    }
+                xhttp.open("GET", "sample.txt", true);
+                xhttp.send();
+            }
         </script>
     </head>
     <body>
@@ -49,6 +57,9 @@
                 <p>Top Speed: 326.6km/h</p>
                 <p>Engine: Supercharged 6.2LT V8, 808HP @ 6,300rpm</p>
                 <p>Price: Starts at</p><p id="price"> 111,265CAD$</p><br>
+            </div>
+            <div id="ajax">
+            <button type="submit"loadDoc()">Load Text File Contents</button>
             </div>
             <button type="submit" onclick="statshidder();">Stats</button>
             <button type="submit" onclick="imgsrc();">IMG</button>
