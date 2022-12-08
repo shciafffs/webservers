@@ -18,5 +18,8 @@
     </head>
     <body>
         <p>Your LED is: <?= $state; ?></p><br>
+        <ul>
+            <li><a href="index.html">GO HOME</a></li>
+        </ul>
     </body>
 </html>
