@@ -3,6 +3,16 @@
     <head>
         <!--Page title-->
         <title>Ambient Stats</title>
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                    }
+                xhttp.open("GET", "led.php", true);
+                xhttp.send();
+            }
+        </script>
     </head>
     <body>
         <h1>Analyze Room Stats:</h1><br>
@@ -13,6 +23,11 @@
             <ul>
                 <li><a href="index.html">GO HOME</a></li>
             </ul>
+        </div>
+        <div id="ajax">
+            <form>
+                <button id="STATS_ASYNC" type="submit" onclick="loadDoc();">AJAX-STATS</button>
+            </form><br>
         </div>
     </body>
 </html>
